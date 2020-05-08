@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#670606"
+    tools:context=".AddLokumFragment">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/berkshire_swash"
+        android:text="Lokum Ekle"
+        android:textColor="#FFFFFF"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/lokumadi_edittext"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:backgroundTint="#ffffff"
+        android:ems="10"
+        android:hint="Lokum adı:"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/lokum_fiyati"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#ffffff"
+        android:ems="10"
+        android:hint="Lokum fiyatı:"
+        android:inputType="number|numberDecimal"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/lokumadi_edittext"
+        app:layout_constraintTop_toBottomOf="@+id/lokumadi_edittext" />
+
+    <EditText
+        android:id="@+id/lokum_stok"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#ffffff"
+        android:ems="10"
+        android:hint="Stok:"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/lokum_fiyati"
+        app:layout_constraintTop_toBottomOf="@+id/lokum_fiyati" />
+
+    <Button
+        android:id="@+id/lokum_eklebuton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/rounded_button"
+        android:text="EKLE"
+        android:textColor="#FFFFFF"
+        android:textSize="23sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lokum_stok"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/takeCamera"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/cameraimg"
+        app:layout_constraintBottom_toTopOf="@+id/lokum_eklebuton"
+        app:layout_constraintStart_toStartOf="@+id/lokum_stok"
+        app:layout_constraintTop_toBottomOf="@+id/lokum_stok"
+        app:layout_constraintVertical_bias="0.055" />
+
+    <ImageView
+        android:id="@+id/selectFromGallery"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/galleryimg"
+        app:layout_constraintBottom_toTopOf="@+id/lokum_eklebuton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toEndOf="@+id/takeCamera"
+        app:layout_constraintTop_toBottomOf="@+id/lokum_stok"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <ImageView
+        android:id="@+id/btnsuccess"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/success"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/selectFromGallery"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toEndOf="@+id/selectFromGallery"
+        app:layout_constraintTop_toBottomOf="@+id/lokum_stok"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

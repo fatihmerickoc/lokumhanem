@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "115327563966",
+    "firebase_url": "https://lokumhanem.firebaseio.com",
+    "project_id": "lokumhanem",
+    "storage_bucket": "lokumhanem.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:115327563966:android:309072f143b64037c386ef",
+        "android_client_info": {
+          "package_name": "com.ruthertech.lokumhanem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "115327563966-oolal3s5og7t2mfqdororv2l1f7kr4nm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ruthertech.lokumhanem",
+            "certificate_hash": "0c2a7e7ff7a1242649224b398cc6840f96793941"
+          }
+        },
+        {
+          "client_id": "115327563966-eou6crke4809julne1mjlohbft2d6ul6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5-WQ_PE35w4H47KLSA4eEiTx1RP_EhsQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "115327563966-eou6crke4809julne1mjlohbft2d6ul6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

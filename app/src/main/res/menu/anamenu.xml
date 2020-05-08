@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@+id/lokumlar" android:title="Lokumlar"></item>
+    <item android:id="@+id/firmalar" android:title="Firma Ekle"></item>
+    <item android:id="@+id/firmaSil" android:title="Firmalar"></item>
+    <item android:id="@+id/siparissorgula" android:title="Şipariş sorgula"></item>
+    <item android:id="@+id/exitmenu" android:title="Çıkış"></item>
+    
+
+
+
+
+</menu>
